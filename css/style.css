@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+.background {
+    background: url("../images/earringbg.png") fixed;
+    width: 1200px;
+    height: 797px;
+    top: 128px;
+    position: relative;
+}
+
+
 body {
     font-family: 'Nunito', sans-serif;
-    background: url("../images/earringbg.png") no-repeat center center fixed;
-    background-size: cover;
-    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Wrapper */

@@ -2,146 +2,262 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background: #fafafa;
-    color: #333;
+    font-family: 'Nunito', sans-serif;
+    background: url("../images/earringbg.png") no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.5;
 }
 
+/* Wrapper */
+#wrapper {
+    margin: 0 auto;
+    padding: 32px;
+    max-width: 1200px;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: white;
+    background: #fff;
+    padding: 16px 32px;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 1.5em;
+#container {
+    display: flex;
+    align-items: center;
+}
+
+#earringlogo img {
+    width: 64px;
+    height: 64px;
+}
+
+#logoText {
+    color: #3E3F43;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
-    margin-left: 20px;
+    margin: 0 15px;
     text-decoration: none;
+    color: #612999;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    font-weight: 700;
+    color: #a56cc1;
+}
+
+/* Top Section */
+.top_section {
+    text-align: left;
+    padding: 100px 32px;
+}
+
+.top_section h1 {
+    color: #612999;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.top_section p {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    max-width: 500px;
+}
+
+/* About Section */
+.about_section {
+    padding: 80px 32px;
+}
+
+.about_section h2 {
+    color: #612999;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about_section p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
     color: #333;
-    font-weight: bold;
+    text-align: justify;
 }
 
-.hero {
-    background: #e6d6f8;
-    text-align: center;
-    padding: 40px 20px;
+/* Earrings Section */
+.lower_section {
+    padding: 80px 32px;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.lower_section h2 {
+    color: #612999;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.hero p {
-    margin-bottom: 20px;
-    font-size: 1.2em;
+/* Earrings Cards */
+.earrings_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
 }
 
-.hero-image {
-    width: 60%;
-    border-radius: 15px;
-    margin-top: 20px;
+.earring {
+    background: #EFECFF;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 280px;
+    position: relative;
+    padding-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.about {
-    padding: 40px 50px;
-    text-align: center;
+.earring:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-.about h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
+.earring img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
 }
 
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+/* Heart and Cart Buttons */
+.heart,
+.shoppingCart {
+    background: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.heart {
+    background-image: url("../images/hearticon.png");
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+}
+
+.heart:hover {
+    background-color: #ffdde0;
+}
+
+.shoppingCart {
+    background-image: url("../images/shoppingcart.png");
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #612999;
+}
+
+.shoppingCart:hover {
+    background-color: #8a4dcf;
+}
+
+/* Earring Details */
+.earring_details {
+    padding: 20px;
+}
+
+.earring_details h4 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.earring_details p {
+    font-size: 16px;
     color: #555;
 }
 
-.popular-drinks {
-    padding: 40px 50px;
-}
-
-.popular-drinks h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2em;
-}
-
-.drinks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.drink-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-}
-
-.drink-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.drink-card h3 {
-    margin: 15px 0 5px 0;
-    font-size: 1.2em;
-}
-
-.drink-card p {
-    color: #666;
-}
-
 .price {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-top: 10px;
+    color: #612999;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
 }
 
-.price span {
-    font-size: 0.8em;
-    color: #999;
-}
-
+/* Footer */
 footer {
-    background: #e6d6f8;
-    padding: 30px 50px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.footer-links {
+    background: #EFECFF;
     display: flex;
     justify-content: space-around;
+    padding: 32px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.footer_item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
-.footer-links h4 {
-    margin-bottom: 10px;
+.footer_item h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
 }
 
-.footer-links p {
-    line-height: 1.5;
+.footer_item a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+    text-decoration: none;
 }
 
-footer .copyright {
-    font-size: 0.9em;
+.footer_item a:hover {
+    text-decoration: underline;
+}
+
+.footer_contains {
+    margin-top: 16px;
+}
+
+.footerIcons a {
+    margin-right: 16px;
+    color: #272D4E;
+    font-size: 20px;
+}
+
+.footerIcons a:hover {
+    color: #612999;
+}
+
+.footer_item span {
+    font-size: 14px;
+    margin-top: 10px;
     color: #555;
 }

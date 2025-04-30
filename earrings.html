@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Earrings</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sat Nam Jewelry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="main" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
-        <div class="logo">✨ EARRINGS</div>
+        <div id="container">
+          <a href="index.html" id="earringlogo">
+            <img src="images/earrings-logo.png" alt="Earring Logo">
+          </a>
+          <span id="logoText">Sat Nam Jewelry</span>
+        </div>
+  
         <nav>
-            <a href="index.html">Home</a>
-            <a href="earrings.html">Our earrings</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+          <a href="index.html" class="active">Home</a>
+          <a href="earrings.html">Our Earrings</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
-    </header>
-
-    <section class="earrings-list">
-        <div class="earrings-gallery">
-            <img src="https://images.unsplash.com/photo-1600180758890-e82e26b53ad4" alt="Earrings 1">
-            <img src="https://images.unsplash.com/photo-1602524811191-40b9cb234b2f" alt="Earrings 2">
-            <img src="https://images.unsplash.com/photo-1599949965630-df18dc5a597b" alt="Earrings 3">
+      </header>
+<main>
+    <section class="images_container">
+        
+            <img class="earring1" src="images/earring1.png" alt="Earrings 1">
+            <img id="middimg" src="images/earringp2.png" alt="Earrings 2">
+            <img class="earring3" src="images/earringph3.jpg" alt="Earrings 3">
         </div>
 
         <h2>List of Earrings</h2>
@@ -39,20 +48,31 @@
             <div class="choice-box"></div>
         </div>
     </section>
+</main>
+<footer>
+    <div class="footer_item">
+      <h3>Who We Are</h3>
+      <a href="#about">About</a>
+      <a href="#">Team</a>
+      <a href="#">Work with Us</a>
 
-    <footer>
-        <div class="footer-links">
-            <div>
-                <h4>WHO WE ARE</h4>
-                <p>About us<br>Our earrings</p>
-            </div>
-            <div>
-                <h4>FOLLOW US</h4>
-                <p>Facebook<br>Instagram</p>
-            </div>
+      <div class="footer_contains">
+        <div class="footerIcons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <p class="copyright">© 2025 EARRINGS</p>
-    </footer>
+      </div>
+      <span>© 2025 Sat Nam Jewelry</span>
+    </div>
+
+    <div class="footer_item">
+      <h3>Follow Us</h3>
+      <a href="https://twitter.com/" target="_blank">Twitter</a>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </footer>
 
 </body>
 </html>

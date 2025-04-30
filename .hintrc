@@ -8,6 +8,7 @@
       {
         "duplicate-id": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }

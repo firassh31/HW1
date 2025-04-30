@@ -213,7 +213,7 @@ h3 {
 }
 
 .earring img {
-    width: 370px;
+    width: 376px;
     height: 276px;
     border-radius: 32px 32px 0px 0px;
 }
@@ -302,6 +302,10 @@ ul li {
 /* page 2 */
 
 .images_container {
+    margin-top: 128px;
+    width: 1052px;
+    height: 300px;
+    margin-left: 32px;
     display: flex;
 }
 
@@ -344,9 +348,41 @@ main h2 {
     margin-left: 32px;
 }
 
+.earring-list {
+    list-style: none;
+    padding: 0;
+}
+
+.earring-list li {
+    margin: 10px 0;
+    margin: 32px;
+    font-family: nunito;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.icon {
+    background-image: url('../images/rocket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-color: #800080;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
 .earring-item {
     list-style-type: none;
-    margin-top: 16px;
+    width: 346px;
+    height: 448px;
+    margin: 460px;
 }
 
 .icon-container {

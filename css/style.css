@@ -18,21 +18,22 @@ header {
     background: #fff;
 }
 
-#container {
+header .header-inner {
     display: flex;
     align-items: center;
     width: 100%;
+    padding-left: 16px;
 }
 
-#earringlogo img {
+header .logo-link img {
     width: 64px;
     height: 64px;
     margin-top: 32px;
-    margin-left: 32px;
+    margin-left: 16px;
     cursor: pointer;
 }
 
-#logoText {
+header .logo-text {
     color: #3E3F43;
     font-family: Nunito;
     font-size: 24px;
@@ -44,7 +45,7 @@ header {
 
 header nav {
     margin-left: auto;
-    padding-right: 32px;
+    padding-right: 8px;
 }
 
 header nav ul {
@@ -118,7 +119,7 @@ h2 {
     margin: 32px 0;
 }
 
-#wrapper {
+.page-wrap {
     margin: 32px;
     display: flex;
     flex-direction: column;
@@ -327,7 +328,7 @@ main ul li {
     flex-shrink: 0;
 }
 
-#middimg {
+.middle-image {
     width: 388.286px;
     height: 300px;
     flex-shrink: 0;
@@ -428,8 +429,41 @@ main h2 {
 .choice-box {
     width: 100%;
     max-width: 1100px;
-    height: 180px;
+    min-height: 180px;
     border: 2px dashed #C2AFE3;
     border-radius: 16px;
     background: #F8F5FF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice-box label {
+    color: #3E3F43;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.choice-box select,
+.choice-box textarea {
+    width: 100%;
+    border: 1px solid #C2AFE3;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: Nunito;
+}
+
+.choice-box button {
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background: #612999;
+    color: #fff;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.choice-box button:hover {
+    background: #7A3CC0;
 }

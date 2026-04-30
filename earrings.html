@@ -11,15 +11,15 @@
 </head>
 <body>
     <header>
-        <div id="container">
-          <a href="index.html" id="earringlogo">
+        <div class="header-inner">
+          <a href="index.html" class="logo-link">
             <img src="images/earrings-logo.webp" alt="Earring Logo">
           </a>
-          <span id="logoText">Sat Nam Jewelry</span>
+          <span class="logo-text">Sat Nam Jewelry</span>
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="earrings.html">Our Earrings</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="earrings.html" class="active">Our Earrings</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -29,11 +29,11 @@
 <main>
     <section class="images_container">
             <img class="earring1" src="images/earring1.webp" alt="Earrings 1">
-            <img id="middimg" src="images/earringp2.webp" alt="Earrings 2">
+            <img class="middle-image" src="images/earringp2.webp" alt="Earrings 2">
             <img class="earring3" src="images/earringph3.jpg" alt="Earrings 3">
     </section>
     <h2>List of Earrings</h2>
-    <div id="wrapper">
+    <div class="page-wrap">
     <ul class="earring-list">
       <li><span class="icon"></span> Gold Hoops</li>
       <li><span class="icon"></span> Pearl Drops</li>
@@ -41,9 +41,21 @@
       <li><span class="icon"></span> Vintage Tassels</li>
     </ul>
     </div>
-        <div class="your-choice" id="wrapper">
+        <div class="your-choice">
             <h3>Your Choice</h3>
-            <div class="choice-box"></div>
+            <form class="choice-box">
+              <label for="earringType">Earring style</label>
+              <select id="earringType" name="earringType" required>
+                <option value="">Choose a style</option>
+                <option value="gold-hoops">Gold Hoops</option>
+                <option value="pearl-drops">Pearl Drops</option>
+                <option value="diamond-studs">Diamond Studs</option>
+                <option value="vintage-tassels">Vintage Tassels</option>
+              </select>
+              <label for="notes">Notes for your custom order</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Color, size, or any special request..."></textarea>
+              <button type="submit">Send Choice</button>
+            </form>
         </div>
 </main>
 <footer>

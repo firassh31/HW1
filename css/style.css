@@ -261,6 +261,8 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.3s;
+    border: none;
+    outline: none;
 }
 
 .heart {

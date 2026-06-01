@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -10,27 +9,35 @@ body {
 }
 
 header {
-    display: flex;
-    width: 1046px;
-    height: 64px;
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 1200px;
+    height: 128px;
     align-items: center;
-    flex-wrap: wrap;
     background: #fff;
 }
 
+.description {
+    color: rgba(253, 252, 252, 0.916);
+}
+
+#title {
+    text-orientation: sideways;
+}
+
 #container {
-    display: flex;
     align-items: center;
 }
 
 #earringlogo img {
+    position: relative;
     width: 64px;
     height: 64px;
-    margin-top: 32px;
-    margin-left: 32px;
 }
 
 #logoText {
+    margin-left: 93px;
+    position: absolute;
     color: #3E3F43;
     font-family: Nunito;
     font-size: 24px;
@@ -38,19 +45,20 @@ header {
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 25%;
+    white-space: nowrap;
 }
 
 nav {
-    margin-left: 419px;
+
     display: flex;
     align-items: center;
-    justify-content: right;
-    width: 100%;
-    height: 64px;
+    background: #fff;
+    position: absolute;
 }
 
 nav a {
-    margin-left: 32px;
+    display: flex;
+    white-space: nowrap;
     text-decoration: none;
     transition: color 0.3s ease;
     color: #612999;
@@ -61,7 +69,15 @@ nav a {
     line-height: normal;
 }
 
+.nav-links {
+    gap: 32px;
+}
+
 nav a.active {
+    width: 84px;
+    height: 41px;
+    margin-top: 48px;
+    margin-left: 419px;
     color: #612999;
     font-family: Nunito;
     font-size: 30px;
@@ -92,15 +108,12 @@ nav a:hover {
     font-size: 96px;
     font-weight: 800;
     width: 448px;
-    margin-left: 32px;
 }
 
 .top_section p {
-    color: #000;
     font-size: 24px;
     font-weight: 600;
     width: 448px;
-    padding-left: 32px;
 }
 
 h2 {
@@ -110,13 +123,14 @@ h2 {
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
-    margin: 32px 0;
 }
 
 #wrapper {
-    margin: 32px;
-    display: flex;
-    flex-direction: column;
+
+    margin-left: 32px;
+    padding: 0;
+    align-items: left;
+
 }
 
 .about_section p {
@@ -135,7 +149,6 @@ footer {
     background: #EFECFF;
     position: flex;
     bottom: 0px;
-    max-width: 100%;
 }
 
 .footer_item {

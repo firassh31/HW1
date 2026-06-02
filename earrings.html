@@ -6,8 +6,8 @@
     <title>Sat Nam Jewelry</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="main" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header>
@@ -17,9 +17,9 @@
           </a>
           <span id="logoText">Sat Nam Jewelry</span>
         <nav>
-          <a href="index.html" class="active">Home</a>
-          <a href="earrings.html">Our Earrings</a>
-          <a href="#about">About</a>
+          <a href="index.html">Home</a>
+          <a href="earrings.html" class="active">Our Earrings</a>
+          <a href="index.html#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
     </div>
@@ -29,26 +29,30 @@
             <img class="earring1" src="images/earring1.png" alt="Earrings 1">
             <img id="middimg" src="images/earringp2.png" alt="Earrings 2">
             <img class="earring3" src="images/earringph3.jpg" alt="Earrings 3">
-        </div>
+    </section>
+    <section class="video">
+      <video src="videos/earring-video.mp4" controls muted playsinline></video>
     </section>
     <h2>List of Earrings</h2>
-    <div id="wrapper">
-    <ul class="drink-list">
+    <div class="wrapper">
+    <ul class="earring-list">
       <li><span class="icon"></span> Gold Hoops</li>
       <li><span class="icon"></span> Pearl Drops</li>
       <li><span class="icon"></span> Diamond Studs</li>
       <li><span class="icon"></span> Vintage Tassels</li>
     </ul>
     </div>
-        <div class="your-choice", id="wrapper">
+        <div class="your-choice wrapper">
             <h3>Your Choice</h3>
-            <div class="choice-box"></div>
+            <div class="choice-box">
+              <img src="images/earringpho4.png" alt="Classy pearl earrings">
+            </div>
         </div>
 </main>
-<footer>
+<footer id="contact">
     <div class="footer_item">
       <h3>Who We Are</h3>
-      <a href="#about">About</a>
+      <a href="index.html#about">About</a>
       <a href="#">Team</a>
       <a href="#">Work with Us</a>
 
@@ -59,14 +63,14 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <span>© 2025 Sat Nam Jewelry</span>
+      <span>&copy; 2025 Sat Nam Jewelry</span>
     </div>
 
     <div class="footer_item">
       <h3>Follow Us</h3>
-      <a href="https://twitter.com/" target="_blank">Twitter</a>
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </div>
   </footer>
 </body>

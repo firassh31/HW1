@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -12,14 +11,26 @@ body {
 }
 
 header {
+<<<<<<< HEAD
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 1200px;
+    height: 128px;
+=======
     display: flex;
     width: 100%;
+<<<<<<< HEAD
     min-height: 80px;
+=======
+    height: 64px;
+>>>>>>> b9029e017be65fd4053a18b1271406829f1fe549
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
     align-items: center;
     background: #fff;
     border-bottom: 1px solid #F0ECF7;
 }
 
+<<<<<<< HEAD
 #container {
     display: flex;
     align-items: center;
@@ -29,26 +40,71 @@ header {
     padding: 12px 32px;
     gap: 24px;
     position: relative;
+=======
+<<<<<<< HEAD
+.description {
+    color: rgba(253, 252, 252, 0.916);
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
 }
 
+#title {
+    text-orientation: sideways;
+}
+
+#container {
+=======
+header .header-inner {
+    display: flex;
+>>>>>>> b9029e017be65fd4053a18b1271406829f1fe549
+    align-items: center;
+    width: 100%;
+    padding-left: 16px;
+}
+
+<<<<<<< HEAD
 #earringlogo img {
+<<<<<<< HEAD
     display: block;
     width: 56px;
     height: 56px;
     object-fit: contain;
+=======
+    position: relative;
+    width: 64px;
+    height: 64px;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
 }
 
 #logoText {
+    margin-left: 93px;
+    position: absolute;
+=======
+header .logo-link img {
+    width: 64px;
+    height: 64px;
+    margin-top: 32px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+header .logo-text {
+>>>>>>> b9029e017be65fd4053a18b1271406829f1fe549
     color: #3E3F43;
     font-family: Nunito, Arial, sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 100%;
+<<<<<<< HEAD
     letter-spacing: 0;
+=======
+    letter-spacing: 25%;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
     white-space: nowrap;
 }
 
+<<<<<<< HEAD
 nav {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +116,33 @@ nav {
 }
 
 nav a {
+=======
+
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+}
+
+nav a {
+    display: flex;
+    white-space: nowrap;
+=======
+header nav {
+    margin-left: auto;
+    padding-right: 8px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+header nav a {
+>>>>>>> b9029e017be65fd4053a18b1271406829f1fe549
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
     text-decoration: none;
     transition: color 0.3s ease, border-color 0.3s ease;
     color: #612999;
@@ -67,23 +150,45 @@ nav a {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+<<<<<<< HEAD
     border-bottom: 2px solid transparent;
     padding: 8px 0;
+=======
+    cursor: pointer;
+}
+
+<<<<<<< HEAD
+.nav-links {
+    gap: 32px;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
 }
 
 nav a.active {
+    width: 84px;
+    height: 41px;
+    margin-top: 48px;
+    margin-left: 419px;
+=======
+header nav a.active {
+>>>>>>> b9029e017be65fd4053a18b1271406829f1fe549
     color: #612999;
     font-weight: bold;
     border-color: #612999;
 }
 
-nav a:hover {
+header nav a:hover {
     color: rgb(204, 38, 176);
 }
 
 .top_section {
+<<<<<<< HEAD
     min-height: 620px;
     background-image: url('../images/earringbg.png');
+=======
+    height: 797px;
+    flex-shrink: 0;
+    background-image: url('../images/earringbg.webp');
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -97,6 +202,7 @@ nav a:hover {
     color: #612999;
     font-size: clamp(48px, 8vw, 96px);
     font-weight: 800;
+<<<<<<< HEAD
     max-width: 448px;
 }
 
@@ -106,6 +212,15 @@ nav a:hover {
     font-weight: 600;
     max-width: 520px;
     margin-top: 16px;
+=======
+    width: 448px;
+}
+
+.top_section p {
+    font-size: 24px;
+    font-weight: 600;
+    width: 448px;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
 }
 
 h2 {
@@ -114,14 +229,27 @@ h2 {
     font-size: clamp(30px, 4vw, 40px);
     font-weight: 500;
     line-height: 40px;
-    margin: 32px 0;
 }
 
+<<<<<<< HEAD
 .wrapper {
     width: min(100% - 64px, 1180px);
     margin: 32px auto;
+=======
+<<<<<<< HEAD
+#wrapper {
+
+    margin-left: 32px;
+    padding: 0;
+    align-items: left;
+
+=======
+.page-wrap {
+    margin: 32px;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
     display: flex;
     flex-direction: column;
+>>>>>>> b9029e017be65fd4053a18b1271406829f1fe549
 }
 
 .about_section p {
@@ -140,8 +268,13 @@ footer {
     flex-wrap: wrap;
     gap: 24px;
     background: #EFECFF;
+<<<<<<< HEAD
     max-width: 100%;
     padding: 32px;
+=======
+    position: flex;
+    bottom: 0px;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
 }
 
 .footer_item {
@@ -167,6 +300,7 @@ h3 {
     font-weight: 400;
     margin-bottom: 8px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .footer_item span {
@@ -257,15 +391,18 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.3s;
+    border: none;
+    outline: none;
 }
 
 .heart {
     background-color: #EFECFF;
-    background-image: url("../images/hearticon.png");
+    background-image: url("../images/hearticon.svg");
     width: 47px;
     height: 47px;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .heart:hover {
@@ -274,22 +411,19 @@ h3 {
 
 .shoppingCart {
     background-color: #612999;
-    background-image: url("../images/shoppingcarticon.png");
+    background-image: url("../images/shoppingcarticon.svg");
     width: 63px;
     height: 63px;
     bottom: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .shoppingCart:hover {
     background-color: #9575CD;
 }
 
-ul {
-    list-style-type: none;
-}
-
-ul li {
+main ul li {
     display: flex;
     align-items: center;
     color: #000;
@@ -324,7 +458,13 @@ ul li {
     flex-shrink: 0;
 }
 
+<<<<<<< HEAD
 #middimg {
+=======
+.middle-image {
+    width: 388.286px;
+    height: 300px;
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
     flex-shrink: 0;
 }
 
@@ -363,7 +503,7 @@ main > h2 {
 }
 
 .icon {
-    background-image: url('../images/rocket.png');
+    background-image: url('../images/rocket.svg');
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
@@ -426,6 +566,7 @@ main > h2 {
     flex-shrink: 0;
 }
 
+<<<<<<< HEAD
 @media (max-width: 820px) {
     #container,
     nav {
@@ -468,3 +609,58 @@ main > h2 {
         padding-left: 24px;
     }
 }
+=======
+.your-choice {
+    margin: 0 32px 32px;
+}
+
+.your-choice h3 {
+    color: #612999;
+    font-family: Rubik;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.choice-box {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 180px;
+    border: 2px dashed #C2AFE3;
+    border-radius: 16px;
+    background: #F8F5FF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice-box label {
+    color: #3E3F43;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.choice-box select,
+.choice-box textarea {
+    width: 100%;
+    border: 1px solid #C2AFE3;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: Nunito;
+}
+
+.choice-box button {
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background: #612999;
+    color: #fff;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.choice-box button:hover {
+    background: #7A3CC0;
+}
+>>>>>>> 4c724e9383516753e7a19fdd301b60e2d165fb04
